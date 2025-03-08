@@ -19,7 +19,7 @@ export default function Placespage() {
             <AccountNavigation />
 
 
-            <div className='text-center'>
+            <div className='text-center'>   
                 {/* List of All Added Places
                         <br/> */}
                 <Link className='primary inline-flex gap-1 text-white py-2 px-6 rounded-full' to={'/account/places/new'}>

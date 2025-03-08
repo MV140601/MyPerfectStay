@@ -3,7 +3,9 @@ import { Link, Navigate, useLocation, useParams } from 'react-router-dom';
 const AccountNavigation = () => {
     const {pathname}=useLocation();
     let subpage=pathname.split('/')?.[2];
-
+     if(subpage==undefined){
+        subpage='profile';
+     }
      function LinkClasses(type = null) {
     //   {  const isActive=pathname==='/account'&&type==='profile';}
 
